@@ -4,11 +4,11 @@ AllCops:
 
 Layout/LineLength:
   Exclude:
-    - 'spec/**'
+    - 'spec/**/**'
 
 Metrics/BlockLength:
   Exclude:
-    - 'spec/**'
+    - 'spec/**/**'
 
 Style/StringLiterals:
   EnforcedStyle: single_quotes

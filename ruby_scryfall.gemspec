@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary     = 'A gem for consuming the Scryfall REST-like API'
   spec.homepage    = 'https://github.com/MatthewSerre/ruby_scryfall'
   spec.license = 'MIT'
-  spec.required_ruby_version = '>= 2.6.0'
+  spec.required_ruby_version = '>= 3.1.0'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
