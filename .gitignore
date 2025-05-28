@@ -2,3 +2,4 @@
 *.gem
 *.irbrc
 *.irb_history
+Gemfile.lock
