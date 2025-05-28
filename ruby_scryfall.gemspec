@@ -2,16 +2,16 @@
 
 require_relative 'lib/scryfall/version'
 
-Gem::Specification.new do |s|
-  s.name = 'ruby_scryfall'
-  s.version     = Scryfall::VERSION
-  s.authors     = ['Matthew Serre', 'Jaron Haberstroh']
-  s.email       = 'matthew.serre+github@gmail.com'
+Gem::Specification.new do |spec|
+  spec.name = 'ruby_scryfall'
+  spec.version     = Scryfall::VERSION
+  spec.authors     = ['Matthew Serre', 'Jaron Haberstroh']
+  spec.email       = 'matthew.serre+github@gmail.com'
 
-  s.summary     = 'A gem for consuming the Scryfall REST-like API'
-  s.homepage    = 'https://github.com/MatthewSerre/ruby_scryfall'
-  s.license = 'MIT'
-  s.required_ruby_version = '>= 2.6.0'
+  spec.summary     = 'A gem for consuming the Scryfall REST-like API'
+  spec.homepage    = 'https://github.com/MatthewSerre/ruby_scryfall'
+  spec.license = 'MIT'
+  spec.required_ruby_version = '>= 2.6.0'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
