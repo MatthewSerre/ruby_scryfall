@@ -1,4 +1,4 @@
-name: scryfall-sdk pipeline
+name: ruby_scryfall pipeline
 
 on:
   push:

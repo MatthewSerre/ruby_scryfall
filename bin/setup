@@ -2,6 +2,6 @@
 
 gem install -g
 
-gem build scryfall-sdk.gemspec
+gem build ruby_scryfall.gemspec
 
-gem install scryfall-sdk-0.0.0.gem
+gem install ruby_scryfall-0.0.0.gem

@@ -1,5 +1,5 @@
-![example workflow](https://github.com/MatthewSerre/scryfall-sdk/actions/workflows/ruby.yml/badge.svg)
+![example workflow](https://github.com/MatthewSerre/ruby_scryfall/actions/workflows/ruby.yml/badge.svg)
 
-# scryfall-sdk
+# ruby_scryfall
 
 ## Ruby gem for interacting with the [Scryfall API](https://scryfall.com/docs/api)
