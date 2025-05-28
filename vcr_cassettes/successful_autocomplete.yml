@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.scryfall.com/cards/autocomplete?path=/cards/autocomplete&q=ja
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.scryfall.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 07 Oct 2022 07:56:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Charset, Accept-Language, Authorization, Cache-Control, Content-Language,
+        Content-Type, DNT, Host, If-Modified-Since, Keep-Alive, Origin, Referer, User-Agent,
+        X-Requested-With
+      Access-Control-Max-Age:
+      - '300'
+      X-Robots-Tag:
+      - none
+      Cache-Control:
+      - public, max-age=14400
+      Content-Disposition:
+      - inline
+      Content-Transfer-Encoding:
+      - binary
+      Vary:
+      - Accept,Accept-Encoding
+      X-Action-Cache:
+      - MISS
+      Etag:
+      - W/"2f70f57e5ade958fdadbb188c18ab9a7"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - MISS
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Bovj9nSauGJsqGZMyHM3VnHzWSCz7O%2Fxtrr%2Fi1KcBX1sPJ%2FYy98dN%2BicGyppz7L1uj%2B%2F%2F7dkp7RE%2B0KZGdmqqdHvYKzTo0g3TUhJm3kddfKDR65jPk%2FslmHIwzqHYJnKwIM%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 756514a07f118263-IAD
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"catalog","total_values":20,"data":["Jade Idol","Jade Mage","Jalum
+        Tome","Jade Leech","Jailbreak","Jace''s Ruse","Jackal Pup","Jade Statue","Jackknight","Jade
+        Bearer","Jackhammer","Jaya Ballard","Jace''s Defeat","Jade Avenger","Jasmine
+        Seer","Jace Beleren","Jandor''s Ring","Jaws of Stone","Jack-in-the-Mox","Jace''s
+        Erasure"]}'
+  recorded_at: Fri, 07 Oct 2022 07:56:31 GMT
+recorded_with: VCR 6.1.0

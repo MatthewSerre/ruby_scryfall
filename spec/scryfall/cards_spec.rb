@@ -21,7 +21,6 @@ RSpec.describe Scryfall::Cards do
     end
 
     context 'exact' do
-      # test goes here
       it 'returns a JSON response containing the data for the specified card' do
         VCR.use_cassette('successful exact named') do
           expect(Scryfall::Cards.named(query: 'jace beleren', exact: true)['name']).to eq('Jace Beleren')
@@ -55,6 +54,14 @@ RSpec.describe Scryfall::Cards do
       VCR.use_cassette('successful code number lang italian') do
         expect(Scryfall::Cards.code_number_lang(code: 'xln', number: 96, lang: 'it')['printed_name'])
           .to eq('Saccheggio a Caro Prezzo')
+      end
+    end
+
+    context 'autocomplete' do
+      it 'returns a JSON response containing data that could be autocompletions of given string' do
+        VCR.use_cassette('successful autocomplete') do
+          expect(Scryfall::Cards.autocomplete(query: 'ja')['data'].length).to eq(20)
+        end
       end
     end
   end
