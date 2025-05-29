@@ -34,5 +34,10 @@ module Scryfall
       params[:path] += "/#{lang}" unless lang.nil?
       api.get(params)
     end
+
+    def self.by_id(id:)
+      params = { path: "/cards/#{id}" }
+      api.get(params)
+    end
   end
 end

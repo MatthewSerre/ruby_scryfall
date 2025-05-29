@@ -64,5 +64,14 @@ RSpec.describe Scryfall::Cards do
         end
       end
     end
+
+    context 'by_id' do
+      it 'returns a JSON response containing the data for the specified card' do
+        VCR.use_cassette('successful by id') do
+          expect(Scryfall::Cards.by_id(id: 'c8817585-0d32-4d56-9142-0d29512e86a9')['name'])
+            .to eq('Jace, the Mind Sculptor')
+        end
+      end
+    end
   end
 end
